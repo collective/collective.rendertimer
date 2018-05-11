@@ -1,0 +1,30 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <subscriber
+      for="plone.app.blocks.interfaces.IBeforeTileRenderEvent"
+      handler=".timing.tilerender_before"
+      />
+  <subscriber
+      for="plone.app.blocks.interfaces.IAfterTileRenderEvent"
+      handler=".timing.tilerender_after"
+      />
+
+  <subscriber
+      for="plone.transformchain.interfaces.IBeforeTransformsEvent"
+      handler=".timing.transforms_before"
+      />
+  <subscriber
+      for="plone.transformchain.interfaces.IAfterTransformsEvent"
+      handler=".timing.transforms_after"
+      />
+
+  <subscriber
+      for="plone.transformchain.interfaces.IBeforeSingleTransformEvent"
+      handler=".timing.transformsingle_before"
+      />
+  <subscriber
+      for="plone.transformchain.interfaces.IAfterSingleTransformEvent"
+      handler=".timing.transformsingle_after"
+      />
+
+</configure>
