@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 setup(
     name='collective.rendertimer',
     version='1.0a1',
-    description="Track timings for code parts in Plone based on events.",
+    description="Track render timings for tiles, single transforms and the whole transform chain.",  # noqa
     long_description=long_description,
     classifiers=[
         "Environment :: Web Environment",

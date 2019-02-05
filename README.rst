@@ -2,7 +2,7 @@
 collective.rendertimer
 ======================
 
-Track timings for code parts in Plone based on events.
+Track render timings for tiles, single transforms and the whole transform chain.
 
 
 Contribute
